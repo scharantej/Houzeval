@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Automated Valuation Tool</title>
+</head>
+<body>
+<h1>Estimated Value</h1>
+<p>Estimated Value: {{ estimated_value }}</p>
+<p>Confidence Level: {{ confidence_level }}</p>
+<h2>Market Analysis</h2>
+<ul>
+{% for item in market_analysis %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+<h2>Comparable Properties</h2>
+<ul>
+{% for item in comparable_properties %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
